@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<title>palindrome numbers</title>
+<body>
+<style>
+</style>
+  <div>
+  <label>enter a number</label>
+  <input type ="text" name"entnumb" id="Entnumb"/>
+  <div id = "Fresult"></div>
+  <button on click="palindrome()">check</button>
+   </div>
+</body>
+<script>
+  function palindrome(){
+  var num,temp,rem,result;
+  result = 0;
+  temp = num;
+   while(num>0){
+      rem = num %10;
+	  num = parseint(num /10);
+	  result = result * 10 +rem;
+    }
+	if (result == temp)
+	alert(temp +':is palindrome');
+	else
+	alert(temp +':is not palindrome');
+	//document.getElementbyid("Fresult").innerHtml = result;
+  
+  }
+</script>
+</html>
